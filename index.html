@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Fast, lightweight static website deployed on DigitalOcean. Built for performance, clarity, and SEO." />
+  <meta name="robots" content="index,follow" />
+  <meta name="theme-color" content="#0b1220" />
+
+  <!-- Canonical: update to your live domain once deployed -->
+  <link rel="canonical" href="https://example.com/" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="DigitalOcean Static Site Starter" />
+  <meta property="og:description" content="Fast, lightweight static website deployed on DigitalOcean. Built for performance, clarity, and SEO." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://example.com/" />
+  <meta property="og:image" content="assets/images/og-image.png" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="DigitalOcean Static Site Starter" />
+  <meta name="twitter:description" content="Fast, lightweight static website deployed on DigitalOcean. Built for performance, clarity, and SEO." />
+  <meta name="twitter:image" content="assets/images/og-image.png" />
+
+  <title>DigitalOcean Static Site Starter</title>
+
+  <!-- Preload main stylesheet for performance -->
+  <link rel="preload" href="assets/css/styles.css" as="style" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+
+  <!-- Basic JSON-LD (Organization) - update fields -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Your Business Name",
+    "url": "https://example.com/",
+    "logo": "https://example.com/assets/images/logo.png",
+    "sameAs": []
+  }
+  </script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <a class="brand-link" href="/" aria-label="Homepage">
+          <span class="brand-mark" aria-hidden="true">◎</span>
+          <span class="brand-name">Your Brand</span>
+        </a>
+      </div>
+
+      <nav class="nav" aria-label="Primary">
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#faq">FAQ</a>
+        <a class="btn btn-small" href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">DigitalOcean Static Site</p>
+          <h1>Fast, clean, and SEO-ready—built to deploy in minutes.</h1>
+          <p class="lead">
+            This starter is designed for lightweight marketing pages, local service sites, and SEO satellites.
+            Swap the copy, drop in your images, and connect GitHub to DigitalOcean.
+          </p>
+
+          <div class="cta-row">
+            <a class="btn" href="#contact">Get in Touch</a>
+            <a class="btn btn-ghost" href="#services">See Services</a>
+          </div>
+
+          <ul class="trust">
+            <li>Optimized meta + OG tags</li>
+            <li>Accessible, responsive layout</li>
+            <li>Simple file structure</li>
+          </ul>
+        </div>
+
+        <div class="hero-media" role="img" aria-label="Decorative preview area">
+          <div class="media-card">
+            <div class="media-top">
+              <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+            </div>
+            <div class="media-body">
+              <p class="media-kicker">READY TO EDIT</p>
+              <p class="media-title">Replace with your hero image</p>
+              <p class="media-text">Drop an image into <code>assets/images/</code> and update the HTML.</p>
+              <p class="media-hint">Example path: <code>assets/images/hero.webp</code></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Services</h2>
+          <p>Replace these with your actual offerings. Keep them short and scannable.</p>
+        </div>
+
+        <div class="grid cards">
+          <article class="card">
+            <h3>Service One</h3>
+            <p>Clear, benefit-focused description that explains what you do and why it matters.</p>
+          </article>
+
+          <article class="card">
+            <h3>Service Two</h3>
+            <p>Use simple language, highlight outcomes, and add a quick trust signal if relevant.</p>
+          </article>
+
+          <article class="card">
+            <h3>Service Three</h3>
+            <p>Great for local services, consulting, or niche landing pages built for speed.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section alt">
+      <div class="container">
+        <div class="two-col">
+          <div>
+            <h2>About</h2>
+            <p>
+              Add your story here—what you do, who you serve, and why people should trust you.
+              Keep it real and specific.
+            </p>
+            <p>
+              If this is a satellite/SEO page, you can also describe how you help visitors find the right next step,
+              then link to your primary service site.
+            </p>
+          </div>
+
+          <div class="panel">
+            <h3>Quick Details</h3>
+            <ul class="list">
+              <li><strong>Location:</strong> Raleigh, NC (example)</li>
+              <li><strong>Hours:</strong> Mon–Fri, 8am–6pm</li>
+              <li><strong>Response:</strong> Same-day quotes (example)</li>
+            </ul>
+            <p class="muted">
+              Tip: keep this factual and easy to update.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>FAQ</h2>
+          <p>Short answers work best. Search engines and humans both like clarity.</p>
+        </div>
+
+        <div class="accordion" role="list">
+          <details class="qa" role="listitem">
+            <summary>How do I deploy this on DigitalOcean?</summary>
+            <div class="qa-body">
+              <ol>
+                <li>Create a GitHub repo and add these files.</li>
+                <li>In DigitalOcean App Platform, create a new app and connect your GitHub repo.</li>
+                <li>Choose a Static Site. Leave build command blank and set output to <code>/</code>.</li>
+              </ol>
+            </div>
+          </details>
+
+          <details class="qa" role="listitem">
+            <summary>Do I need a build step?</summary>
+            <div class="qa-body">
+              <p>No. This is plain HTML/CSS/JS. DigitalOcean will serve <code>index.html</code> automatically.</p>
+            </div>
+          </details>
+
+          <details class="qa" role="listitem">
+            <summary>What should I change first?</summary>
+            <div class="qa-body">
+              <ul>
+                <li>Update the <code>&lt;title&gt;</code> and meta description</li>
+                <li>Set the canonical URL to your real domain</li>
+                <li>Replace “Your Brand” + services + contact info</li>
+              </ul>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section alt">
+      <div class="container">
+        <div class="two-col">
+          <div>
+            <h2>Contact</h2>
+            <p>
+              For static sites, the simplest reliable “contact” is a click-to-email + click-to-call.
+              If you want a form later, we can add a provider (Formspree, Basin, Netlify Forms, etc.).
+            </p>
+
+            <div class="contact-actions">
+              <a class="btn" href="mailto:you@example.com">Email: you@example.com</a>
+              <a class="btn btn-ghost" href="tel:+19195551234">Call: (919) 555-1234</a>
+            </div>
+
+            <p class="muted">
+              Replace the email/phone above and you’re done.
+            </p>
+          </div>
+
+          <div class="panel">
+            <h3>Primary Site</h3>
+            <p>
+              If this is a satellite page, link visitors to your main service website here:
+            </p>
+            <p>
+              <a class="link" href="https://example.com/" target="_blank" rel="noopener">https://example.com/</a>
+            </p>
+            <hr />
+            <p class="muted">
+              Tip: update the canonical tag at the top once your live domain is set.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Your Brand. All rights reserved.</p>
+      <p class="footer-links">
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
